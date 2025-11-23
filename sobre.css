@@ -1,0 +1,288 @@
+/* ===============================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #3a3a3a;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #6a0dad;
+    letter-spacing: -0.5px;
+}
+
+/* Textos mais suaves */
+p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.08rem;
+}
+
+/* ===============================
+   MARGENS DE 15%
+================================= */
+
+.sobre-hero,
+.sobre-historia,
+.sobre-mvv,
+.sobre-porque {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+/* ========= NAVBAR ========= */
+
+.logo img {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+header {
+    background: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #6a0dad;
+}
+
+
+/* ===============================
+   HERO SOBRE
+================================= */
+
+.sobre-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 8%;
+    background: #ffffff;
+    gap: 50px;
+}
+
+.sobre-texto h1 {
+    font-size: 3rem;
+    margin-bottom: 18px;
+}
+
+.sobre-texto p {
+    font-size: 1.15rem;
+    line-height: 1.75;
+}
+
+.sobre-img {
+    width: 38%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 900px) {
+    .sobre-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-img {
+        width: 90%;
+    }
+}
+
+
+/* ===============================
+   HISTÓRIA
+================================= */
+
+.sobre-historia {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.sobre-historia h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+}
+
+.sobre-historia p {
+    max-width: 830px;
+    margin: 0 auto 45px;
+    font-size: 1.12rem;
+}
+
+
+/* ===============================
+   CARDS UNIVERSAIS (HISTORIA, MVV, PORQUE)
+================================= */
+
+.card-historia,
+.mvv-card,
+.porque-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 35px 22px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: .3s ease;
+    max-width: 310px;
+}
+
+.card-historia:hover,
+.mvv-card:hover,
+.porque-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    border: 1px solid #6a0dad;
+}
+
+.card-historia i,
+.mvv-card i,
+.porque-card i {
+    font-size: 42px;
+    color: #6a0dad;
+    margin-bottom: 15px;
+}
+
+.card-historia h3,
+.mvv-card h3,
+.porque-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.card-historia p,
+.mvv-card p,
+.porque-card p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.65;
+}
+
+/* Layout */
+.cards-historia,
+.porque-cards {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+/* ===============================
+   MISSÃO, VISÃO E VALORES
+================================= */
+
+.sobre-mvv {
+    padding: 70px 8%;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+
+/* ===============================
+   POR QUE NOS ESCOLHER
+================================= */
+
+.sobre-porque h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* BOTÃO FLUTUANTE INSTAGRAM */
+.instagram-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 999;
+}
+
+.instagram-float img {
+    width: 35px;
+    height: 35px;
+}
+
+.instagram-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ===============================
+   FOOTER UNIVERSIDADE
+================================= */
+
+.footer-ucb {
+    background-color: #121826;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 50px;
+}
+
+.footer-ucb .footer-title {
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.footer-ucb .footer-integrantes {
+    font-size: 14px;
+    color: #e6e6e6;
+    margin-bottom: 15px;
+}
+
+.footer-ucb-logo {
+    width: 170px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.footer-ucb-logo:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
