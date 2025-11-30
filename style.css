@@ -18,7 +18,7 @@ body {
 
 /* LOGO */
 .logo img {
-    height: 60px;
+    height: 85px;
     width: auto;
     border-radius: 8px;
     object-fit: contain;
@@ -58,23 +58,36 @@ header {
 
 /* ========= HERO ========= */
 .hero {
-  background: url("https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1500&q=80")
+  background: linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0.15)),
+    url("https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1500&q=80")
     center/cover no-repeat;
-  height: 65vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   padding-left: 60px;
   color: white;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  max-width: 550px;
+/* CONTAINER DO TEXTO DA HERO */
+.hero div {
+  max-width: 650px;
 }
 
+/* TÍTULO */
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  line-height: 1.18;
+}
+
+/* SUBTÍTULO */
 .hero p {
-  font-size: 1.2rem;
-  margin-top: 15px;
+  font-size: 1.35rem;
+  margin-top: 18px;
+  font-weight: 300;
+  opacity: 0.95;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
 }
 
 .btn {
@@ -192,32 +205,32 @@ h2 {
 }
 
 
-/* BOTÃO FLUTUANTE INSTAGRAM */
-.instagram-float {
+/* BOTÃO FLUTUANTE WHATSAPP */
+.whatsapp-float {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 25px;
     right: 25px;
-    background: #fff;
+    background-color: #25d366;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    z-index: 999;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease-in-out;
+    z-index: 1000;
 }
 
-.instagram-float img {
-    width: 35px;
-    height: 35px;
+.whatsapp-float img {
+    width: 36px;
+    height: 36px;
 }
 
-.instagram-float:hover {
+.whatsapp-float:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
+
 
 
 /* ====== FOOTER UNIVERSIDADE ====== */
@@ -399,4 +412,115 @@ section p {
     font-size: 0.95rem;
     color: #444;
     line-height: 1.5;
+}
+
+
+/* CONTATO */
+
+.contato-page {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contato-page h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #6a0dad;
+    margin-bottom: 15px;
+}
+
+.contato-page p {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+.contato-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.contato-card {
+    background: #fff;
+    width: 260px;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border: 2px solid transparent;
+    transition: 0.25s ease;
+}
+
+.contato-card:hover {
+    transform: translateY(-8px);
+    border-color: #b464cf;
+    box-shadow: 0 12px 30px rgba(166, 76, 166, 0.25);
+}
+
+.contato-card i {
+    font-size: 3rem;
+    color: #a64ca6;
+    margin-bottom: 10px;
+}
+
+.contato-card h3 {
+    font-size: 1.3rem;
+    color: #2e003e;
+    margin-bottom: 8px;
+}
+
+.contato-dado {
+    display: block;
+    font-size: 1.05rem;
+    margin-top: 8px;
+    font-weight: 600;
+    color: #111;
+}
+
+/* BOTÕES DE AÇÃO FINAL */
+
+.contato-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn-contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.btn-contato i {
+    font-size: 1.4rem;
+}
+
+/* WHATSAPP */
+.btn-contato.whatsapp {
+    background: #1aa731;
+}
+
+.btn-contato.whatsapp:hover {
+    background: #0d7e23;
+}
+
+/* INSTAGRAM */
+.btn-contato.instagram {
+    background: #a64ca6;
+}
+
+.btn-contato.instagram:hover {
+    background: #7c2a7c;
 }
